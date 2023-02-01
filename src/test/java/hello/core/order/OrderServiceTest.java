@@ -13,7 +13,7 @@ public class OrderServiceTest {
 
     @Test
     void createOrder(){
-        Long memberId = 2L;
+        Long memberId = 3L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
         Order order = orderService.createOrder(memberId, "itemA", 10000);
